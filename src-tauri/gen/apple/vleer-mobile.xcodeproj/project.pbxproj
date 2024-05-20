@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B962096773B1DB227D03ED /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7290278AFCF2762B055BC7D /* WebKit.framework */; };
+		478927CA0DB4D6DA66733A7B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 44273CFE53FAE190754D738B /* assets */; };
+		5A13660D9D27B68D1B4B7851 /* libtauri_app_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA3932892B767A299473D60 /* libtauri_app_lib.a */; };
+		69FCA3220E8F418BB5E793DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AB05916D422A90623C9AD6 /* CoreGraphics.framework */; };
+		6D9D9552C761A4FC3FDA7921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C77BD42EA1AC8DA7D06CEE /* Assets.xcassets */; };
+		7B0D72CE9668E9B211889247 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3694D15E55081F0F7433D6 /* MetalKit.framework */; };
+		89229EA3D5859CDE6D696445 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892ACD5EF825A59CA7BC9DB /* Metal.framework */; };
+		9DB13BDD1A0B572E0388DAAD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2423A82378371CACE053F3D9 /* main.mm */; };
+		A258B71C78EF1963B1A38469 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B5C3906FA15395A5048791 /* QuartzCore.framework */; };
+		CB65520C1A4F0D756BE85043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EFFB103CF489522463A811 /* UIKit.framework */; };
+		FBAB5E33157052E486141A41 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF57E57DC6FCD6A8CA9D2D4 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01C77BD42EA1AC8DA7D06CEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2423A82378371CACE053F3D9 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		2892ACD5EF825A59CA7BC9DB /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		418B159C1ACAF6BF1C4BD550 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		44273CFE53FAE190754D738B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		4C0E2A43E0B0B849261D5AB3 /* vleer-mobile_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "vleer-mobile_iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A8BF42291898E7BA94F847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7BA3932892B767A299473D60 /* libtauri_app_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtauri_app_lib.a; sourceTree = "<group>"; };
+		8FF57E57DC6FCD6A8CA9D2D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A7290278AFCF2762B055BC7D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A7EFFB103CF489522463A811 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB18E0F12AA25ACBBB2402EF /* vleer-mobile_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "vleer-mobile_iOS.entitlements"; sourceTree = "<group>"; };
+		AEDD96715B24678E362D4AB9 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		DC3694D15E55081F0F7433D6 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		EEF6D5DF519F11F6182EF8C8 /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
+		F5AB05916D422A90623C9AD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6B5C3906FA15395A5048791 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF5A59395C515ECF88C56E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A13660D9D27B68D1B4B7851 /* libtauri_app_lib.a in Frameworks */,
+				69FCA3220E8F418BB5E793DA /* CoreGraphics.framework in Frameworks */,
+				89229EA3D5859CDE6D696445 /* Metal.framework in Frameworks */,
+				7B0D72CE9668E9B211889247 /* MetalKit.framework in Frameworks */,
+				A258B71C78EF1963B1A38469 /* QuartzCore.framework in Frameworks */,
+				FBAB5E33157052E486141A41 /* Security.framework in Frameworks */,
+				CB65520C1A4F0D756BE85043 /* UIKit.framework in Frameworks */,
+				06B962096773B1DB227D03ED /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DE4A72202F6A33A22F85B6 /* vleer-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				2423A82378371CACE053F3D9 /* main.mm */,
+				C8AAB525E437D93F0BD18D3B /* bindings */,
+			);
+			path = "vleer-mobile";
+			sourceTree = "<group>";
+		};
+		1AADE449C5BC85CF2DADB1A8 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		2BB404BAFFE013CCE767CEEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C0E2A43E0B0B849261D5AB3 /* vleer-mobile_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73434E069F8B71BCD571B008 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5AB05916D422A90623C9AD6 /* CoreGraphics.framework */,
+				7BA3932892B767A299473D60 /* libtauri_app_lib.a */,
+				2892ACD5EF825A59CA7BC9DB /* Metal.framework */,
+				DC3694D15E55081F0F7433D6 /* MetalKit.framework */,
+				F6B5C3906FA15395A5048791 /* QuartzCore.framework */,
+				8FF57E57DC6FCD6A8CA9D2D4 /* Security.framework */,
+				A7EFFB103CF489522463A811 /* UIKit.framework */,
+				A7290278AFCF2762B055BC7D /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90FA41DCEE304F86D9B01D68 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EEF6D5DF519F11F6182EF8C8 /* lib.rs */,
+				418B159C1ACAF6BF1C4BD550 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		A671F77219DE30C79FD9B84B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				04DE4A72202F6A33A22F85B6 /* vleer-mobile */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C8AAB525E437D93F0BD18D3B /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				AEDD96715B24678E362D4AB9 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		E0E5087D25BFFADB24B4A4C4 /* vleer-mobile_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				60A8BF42291898E7BA94F847 /* Info.plist */,
+				AB18E0F12AA25ACBBB2402EF /* vleer-mobile_iOS.entitlements */,
+			);
+			path = "vleer-mobile_iOS";
+			sourceTree = "<group>";
+		};
+		E57BF4B5594F431D99523DF2 = {
+			isa = PBXGroup;
+			children = (
+				44273CFE53FAE190754D738B /* assets */,
+				01C77BD42EA1AC8DA7D06CEE /* Assets.xcassets */,
+				1AADE449C5BC85CF2DADB1A8 /* Externals */,
+				A671F77219DE30C79FD9B84B /* Sources */,
+				90FA41DCEE304F86D9B01D68 /* src */,
+				E0E5087D25BFFADB24B4A4C4 /* vleer-mobile_iOS */,
+				73434E069F8B71BCD571B008 /* Frameworks */,
+				2BB404BAFFE013CCE767CEEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B82B1B78CFD0FE7F8E53C7F3 /* vleer-mobile_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FC469F9D03F2E7D14D9133 /* Build configuration list for PBXNativeTarget "vleer-mobile_iOS" */;
+			buildPhases = (
+				CC0C8A6B41C085E17784A075 /* Build Rust Code */,
+				C031F60931B9A2C9C2B8EC5C /* Sources */,
+				5F77293BF37FE3491738CBDC /* Resources */,
+				FAF5A59395C515ECF88C56E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vleer-mobile_iOS";
+			productName = "vleer-mobile_iOS";
+			productReference = 4C0E2A43E0B0B849261D5AB3 /* vleer-mobile_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73F2E8F7796F591ADA227960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B82B1B78CFD0FE7F8E53C7F3 = {
+						DevelopmentTeam = 8V8Y36RRF6;
+					};
+				};
+			};
+			buildConfigurationList = EAC302FCC1314695E4F922E6 /* Build configuration list for PBXProject "vleer-mobile" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E57BF4B5594F431D99523DF2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B82B1B78CFD0FE7F8E53C7F3 /* vleer-mobile_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F77293BF37FE3491738CBDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9D9552C761A4FC3FDA7921 /* Assets.xcassets in Resources */,
+				478927CA0DB4D6DA66733A7B /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC0C8A6B41C085E17784A075 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/target/aarch64-apple-ios/${CONFIGURATION}/deps/libtauri_app_lib.a",
+				"$(SRCROOT)/target/x86_64-apple-ios/${CONFIGURATION}/deps/libtauri_app_lib.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pnpm tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C031F60931B9A2C9C2B8EC5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB13BDD1A0B572E0388DAAD /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2014727F95950C9CA5FE3D06 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "vleer-mobile_iOS/vleer-mobile_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8V8Y36RRF6;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "vleer-mobile_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.vleer-mobile";
+				PRODUCT_NAME = "vleer-mobile";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = debug;
+		};
+		930EA2AE5827DB8CFCFDC3D8 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "vleer-mobile_iOS/vleer-mobile_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8V8Y36RRF6;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "vleer-mobile_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.vleer-mobile";
+				PRODUCT_NAME = "vleer-mobile";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = release;
+		};
+		CEA3340682487FCA4242DA5B /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		DC19F281ED6C74ABDE51ECE6 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07FC469F9D03F2E7D14D9133 /* Build configuration list for PBXNativeTarget "vleer-mobile_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2014727F95950C9CA5FE3D06 /* debug */,
+				930EA2AE5827DB8CFCFDC3D8 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		EAC302FCC1314695E4F922E6 /* Build configuration list for PBXProject "vleer-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC19F281ED6C74ABDE51ECE6 /* debug */,
+				CEA3340682487FCA4242DA5B /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73F2E8F7796F591ADA227960 /* Project object */;
+}

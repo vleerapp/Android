@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
-               BuildableName = "vleer_iOS.app"
-               BlueprintName = "vleer_iOS"
-               ReferencedContainer = "container:vleer.xcodeproj">
+               BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
+               BuildableName = "vleer-mobile_iOS.app"
+               BlueprintName = "vleer-mobile_iOS"
+               ReferencedContainer = "container:vleer-mobile.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
-            BuildableName = "vleer_iOS.app"
-            BlueprintName = "vleer_iOS"
-            ReferencedContainer = "container:vleer.xcodeproj">
+            BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
+            BuildableName = "vleer-mobile_iOS.app"
+            BlueprintName = "vleer-mobile_iOS"
+            ReferencedContainer = "container:vleer-mobile.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -69,10 +69,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
-            BuildableName = "vleer_iOS.app"
-            BlueprintName = "vleer_iOS"
-            ReferencedContainer = "container:vleer.xcodeproj">
+            BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
+            BuildableName = "vleer-mobile_iOS.app"
+            BlueprintName = "vleer-mobile_iOS"
+            ReferencedContainer = "container:vleer-mobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -100,10 +100,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
-            BuildableName = "vleer_iOS.app"
-            BlueprintName = "vleer_iOS"
-            ReferencedContainer = "container:vleer.xcodeproj">
+            BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
+            BuildableName = "vleer-mobile_iOS.app"
+            BlueprintName = "vleer-mobile_iOS"
+            ReferencedContainer = "container:vleer-mobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>

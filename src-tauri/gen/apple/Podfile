@@ -1,13 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 
-target 'vleer_iOS' do
+target 'vleer-mobile_iOS' do
 platform :ios, '13.0'
-  # Pods for vleer_iOS
+  # Pods for vleer-mobile_iOS
 end
 
-target 'vleer_macOS' do
+target 'vleer-mobile_macOS' do
 platform :osx, '11.0'
-  # Pods for vleer_macOS
+  # Pods for vleer-mobile_macOS
 end
 
 # Delete the deployment target for iOS and macOS, causing it to be inherited from the Podfile

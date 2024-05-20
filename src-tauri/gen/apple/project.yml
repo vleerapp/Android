@@ -1,4 +1,4 @@
-name: vleer
+name: vleer-mobile
 options:
   bundleIdPrefix: app
   deploymentTarget:
@@ -11,7 +11,7 @@ settingGroups:
   app:
     base:
       PRODUCT_NAME: vleer-mobile
-      PRODUCT_BUNDLE_IDENTIFIER: app.vleer
+      PRODUCT_BUNDLE_IDENTIFIER: app.vleer-mobile
       DEVELOPMENT_TEAM: 8V8Y36RRF6
 targetTemplates:
   app:
@@ -25,19 +25,19 @@ targetTemplates:
     settings:
       groups: [app]
 targets:
-  vleer_iOS:
+  vleer-mobile_iOS:
     type: application
     platform: iOS
     sources:
       - path: Sources
       - path: Assets.xcassets
       - path: Externals
-      - path: vleer_iOS
+      - path: vleer-mobile_iOS
       - path: assets
         buildPhase: resources
         type: folder
     info:
-      path: vleer_iOS/Info.plist
+      path: vleer-mobile_iOS/Info.plist
       properties:
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
@@ -54,7 +54,7 @@ targets:
         CFBundleShortVersionString: 1.0.0
         CFBundleVersion: 1.0.0
     entitlements:
-      path: vleer_iOS/vleer_iOS.entitlements
+      path: vleer-mobile_iOS/vleer-mobile_iOS.entitlements
     scheme:
       environmentVariables:
         RUST_BACKTRACE: full
@@ -72,7 +72,7 @@ targets:
         EXCLUDED_ARCHS[sdk=iphoneos*]: arm64-sim x86_64
       groups: [app]
     dependencies:
-      - framework: libapp_lib.a
+      - framework: libtauri_app_lib.a
         embed: false
       - sdk: CoreGraphics.framework
       - sdk: Metal.framework
@@ -86,5 +86,5 @@ targets:
         name: Build Rust Code
         basedOnDependencyAnalysis: false
         outputFiles:
-          - $(SRCROOT)/target/aarch64-apple-ios/${CONFIGURATION}/deps/libapp_lib.a
-          - $(SRCROOT)/target/x86_64-apple-ios/${CONFIGURATION}/deps/libapp_lib.a
+          - $(SRCROOT)/target/aarch64-apple-ios/${CONFIGURATION}/deps/libtauri_app_lib.a
+          - $(SRCROOT)/target/x86_64-apple-ios/${CONFIGURATION}/deps/libtauri_app_lib.a

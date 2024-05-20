@@ -3496,11 +3496,9 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
-name = "vleer"
-version = "1.0.0"
+name = "vleer-mobile"
+version = "0.0.1"
 dependencies = [
- "serde",
- "serde_json",
  "tauri",
  "tauri-build",
 ]

@@ -1,19 +1,21 @@
 [package]
-name = "vleer"
-version = "1.0.0"
+name = "vleer-mobile"
+version = "0.0.1"
 description = "Vleer"
-rust-version = "1.70"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-name = "app_lib"
-crate-type = ["staticlib", "cdylib", "rlib", "lib"]
+name = "tauri_app_lib"
+crate-type = [
+  "staticlib",
+  "cdylib",
+  "rlib"
+]
 
 [build-dependencies]
 tauri-build = { version = "2.0.0-beta", features = [] }
 
 [dependencies]
 tauri = { version = "2.0.0-beta", features = [] }
-serde_json = "1.0"
-serde = { version = "1.0", features = ["derive"] }
+
+[features]
+custom-protocol = [ "tauri/custom-protocol" ]
