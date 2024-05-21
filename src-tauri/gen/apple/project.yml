@@ -1,4 +1,4 @@
-name: vleer-mobile
+name: vleer
 options:
   bundleIdPrefix: app
   deploymentTarget:
@@ -10,8 +10,8 @@ configs:
 settingGroups:
   app:
     base:
-      PRODUCT_NAME: vleer-mobile
-      PRODUCT_BUNDLE_IDENTIFIER: app.vleer-mobile
+      PRODUCT_NAME: vleer
+      PRODUCT_BUNDLE_IDENTIFIER: app.vleer
       DEVELOPMENT_TEAM: 8V8Y36RRF6
 targetTemplates:
   app:
@@ -25,19 +25,19 @@ targetTemplates:
     settings:
       groups: [app]
 targets:
-  vleer-mobile_iOS:
+  vleer_iOS:
     type: application
     platform: iOS
     sources:
       - path: Sources
       - path: Assets.xcassets
       - path: Externals
-      - path: vleer-mobile_iOS
+      - path: vleer_iOS
       - path: assets
         buildPhase: resources
         type: folder
     info:
-      path: vleer-mobile_iOS/Info.plist
+      path: vleer_iOS/Info.plist
       properties:
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
@@ -54,7 +54,7 @@ targets:
         CFBundleShortVersionString: 1.0.0
         CFBundleVersion: 1.0.0
     entitlements:
-      path: vleer-mobile_iOS/vleer-mobile_iOS.entitlements
+      path: vleer_iOS/vleer_iOS.entitlements
     scheme:
       environmentVariables:
         RUST_BACKTRACE: full

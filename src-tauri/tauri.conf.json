@@ -1,6 +1,6 @@
 {
-  "productName": "vleer-mobile",
-  "version": "1.0.0",
+  "productName": "vleer",
+  "version": "0.0.1",
   "identifier": "app.vleer",
   "build": {
     "frontendDist": "../dist",
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "vleer-mobile",
+        "title": "Vleer",
         "width": 800,
         "height": 600,
         "resizable": true,

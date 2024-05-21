@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1430"
-   version = "1.7">
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES"
-      runPostActionsOnFailure = "NO">
+      buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -15,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
-               BuildableName = "vleer-mobile_iOS.app"
-               BlueprintName = "vleer-mobile_iOS"
-               ReferencedContainer = "container:vleer-mobile.xcodeproj">
+               BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
+               BuildableName = "vleer.app"
+               BlueprintName = "vleer_iOS"
+               ReferencedContainer = "container:vleer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,21 +26,16 @@
       buildConfiguration = "debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "NO"
-      onlyGenerateCoverageForSpecifiedTargets = "NO">
+      shouldUseLaunchSchemeArgsEnv = "NO">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
-            BuildableName = "vleer-mobile_iOS.app"
-            BlueprintName = "vleer-mobile_iOS"
-            ReferencedContainer = "container:vleer-mobile.xcodeproj">
+            BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
+            BuildableName = "vleer.app"
+            BlueprintName = "vleer_iOS"
+            ReferencedContainer = "container:vleer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <Testables>
-      </Testables>
-      <CommandLineArguments>
-      </CommandLineArguments>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "RUST_BACKTRACE"
@@ -54,6 +48,8 @@
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "debug"
@@ -69,14 +65,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
-            BuildableName = "vleer-mobile_iOS.app"
-            BlueprintName = "vleer-mobile_iOS"
-            ReferencedContainer = "container:vleer-mobile.xcodeproj">
+            BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
+            BuildableName = "vleer.app"
+            BlueprintName = "vleer_iOS"
+            ReferencedContainer = "container:vleer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "RUST_BACKTRACE"
@@ -100,14 +94,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B82B1B78CFD0FE7F8E53C7F3"
-            BuildableName = "vleer-mobile_iOS.app"
-            BlueprintName = "vleer-mobile_iOS"
-            ReferencedContainer = "container:vleer-mobile.xcodeproj">
+            BlueprintIdentifier = "B0843AB74A0BFCE5D9672241"
+            BuildableName = "vleer.app"
+            BlueprintName = "vleer_iOS"
+            ReferencedContainer = "container:vleer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "RUST_BACKTRACE"
