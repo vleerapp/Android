@@ -1,48 +1,37 @@
 @use "~/assets/styles/variables" as v;
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 20px;
+.player{
   position: fixed;
-  width: calc(100vw - 40px);
-  bottom: 4px;
+  bottom: 62px;
+  height: 52px;
+  width: calc(100vw - 24px);
+  background-color: v.$background;
+  z-index: 3;
+  margin-inline: 12px;
+  padding: 8px;
+  border: 1px solid v.$foreground;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  .link {
+  div:first-child {
+    gap: 12px;
     display: flex;
-    flex-direction: column;
-    gap: 2px;
     align-items: center;
-    color: v.$text;
-    user-select: none;
-    text-decoration: none;
-    font-size: 10px;
   }
 
-  .svg-default {
-    height: 28px;
-    display: block;
+  .progress{
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    background-color: v.$accent;
+    bottom: 0;
+    left: 0;
   }
 
-  .svg-active {
-    height: 28px;
-    display: none;
-  }
-
-  .router-link-active .svg-default {
-    display: none;
-  }
-
-  .router-link-active .svg-active {
-    display: block;
-  }
-
-  .link svg {
-    fill: currentColor;
-  }
-
-  .link:hover,
-  .link.router-link-active {
-    color: v.$text-bright;
+  .controls{
+    display: flex;
+    gap: 8px;
+    margin-right: 2px;
   }
 }

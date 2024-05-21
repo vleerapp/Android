@@ -1,0 +1,50 @@
+@use "~/assets/styles/variables" as v;
+
+.navbar {
+  overflow: hidden;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 20px;
+  position: fixed;
+  width: calc(100vw - 40px);
+  bottom: 4px;
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    color: v.$text;
+    user-select: none;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .svg-default {
+    height: 28px;
+    display: block;
+  }
+
+  .svg-active {
+    height: 28px;
+    display: none;
+  }
+
+  .router-link-active .svg-default {
+    display: none;
+  }
+
+  .router-link-active .svg-active {
+    display: block;
+  }
+
+  .link svg {
+    fill: currentColor;
+  }
+
+  .link:hover,
+  .link.router-link-active {
+    color: v.$text-bright;
+  }
+}

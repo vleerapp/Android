@@ -1,52 +1,29 @@
 <template>
-  <div class="navbar">
-    <NuxtLink to="/" class="link home">
-      <div class="svg-default">
-        <IconsNavbarHomeOutline />
-      </div>
-      <div class="svg-active">
-        <IconsNavbarHomeFill />
-      </div>
-      Home
-    </NuxtLink>
-    <NuxtLink to="/songs" class="link songs">
-      <div class="svg-default">
-        <IconsNavbarSongsOutline />
-      </div>
-      <div class="svg-active">
-        <IconsNavbarSongsFill />
-      </div>
-      Songs
-    </NuxtLink>
-    <NuxtLink to="/library" class="link library">
-      <div class="svg-default">
-        <IconsNavbarLibrary />
-      </div>
-      <div class="svg-active">
-        <IconsNavbarLibrary />
-      </div>
-      Library
-    </NuxtLink>
-    <NuxtLink to="/settings" class="link settings">
-      <div class="svg-default">
-        <IconsNavbarSettingsOutline />
-      </div>
-      <div class="svg-active">
-        <IconsNavbarSettingsFill />
-      </div>
-      Settings
-    </NuxtLink>
-    <NuxtLink to="/search" class="link search">
-      <div class="svg-default">
-        <IconsNavbarSearchOutline />
-      </div>
-      <div class="svg-active">
-        <IconsNavbarSearchFill />
-      </div>
-      Search
-    </NuxtLink>
+  <div class="player">
+    <div>
+      <img src="/cover.png" alt="cover" class="cover">
+      <div class="title">Title</div>
+    </div>
+    <div class="controls">
+      <IconsPlay v-if="paused" @click="play" />
+      <IconsPause v-if="!paused" @click="pause" />
+      <IconsSkip @click="skip" />
+    </div>
+    <div class="progress"></div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const paused = ref(true)
+
+function play(){
+  paused.value = false;
+}
+
+function pause() {
+  paused.value = true;
+}
+</script>
 
 <style scoped lang="scss">
 @use '~/assets/styles/components/player';

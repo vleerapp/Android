@@ -1,4 +1,5 @@
 <template>
+  <Navbar/>
   <Player/>
   <NuxtPage />
 </template>
