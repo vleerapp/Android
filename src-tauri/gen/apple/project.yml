@@ -10,7 +10,7 @@ configs:
 settingGroups:
   app:
     base:
-      PRODUCT_NAME: vleer
+      PRODUCT_NAME: Vleer
       PRODUCT_BUNDLE_IDENTIFIER: app.vleer
       DEVELOPMENT_TEAM: 8V8Y36RRF6
 targetTemplates:
@@ -51,8 +51,8 @@ targets:
           - UIInterfaceOrientationPortraitUpsideDown
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
-        CFBundleShortVersionString: 1.0.0
-        CFBundleVersion: 1.0.0
+        CFBundleShortVersionString: 0.0.1
+        CFBundleVersion: 0.0.1
     entitlements:
       path: vleer_iOS/vleer_iOS.entitlements
     scheme:

@@ -1,7 +1,7 @@
 <template>
-  <Navbar />
-  <Player />
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style lang="scss">
