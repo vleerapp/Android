@@ -1,5 +1,5 @@
 {
-  "productName": "vleer",
+  "productName": "Vleer",
   "version": "0.0.1",
   "identifier": "app.vleer",
   "build": {
@@ -14,7 +14,7 @@
         "title": "Vleer",
         "width": 800,
         "height": 600,
-        "resizable": true,
+        "resizable": false,
         "fullscreen": false
       }
     ],

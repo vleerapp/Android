@@ -1,6 +1,6 @@
 <template>
-  <Navbar/>
-  <Player/>
+  <Navbar />
+  <Player />
   <NuxtPage />
 </template>
 
