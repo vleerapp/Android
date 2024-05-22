@@ -18,15 +18,6 @@
       </div>
       Songs
     </NuxtLink>
-    <NuxtLink to="/library" class="link library">
-      <div class="svg-default">
-        <IconsNavbarLibrary />
-      </div>
-      <div class="svg-active">
-        <IconsNavbarLibrary />
-      </div>
-      Library
-    </NuxtLink>
     <NuxtLink to="/settings" class="link settings">
       <div class="svg-default">
         <IconsNavbarSettingsOutline />
@@ -35,6 +26,15 @@
         <IconsNavbarSettingsFill />
       </div>
       Settings
+    </NuxtLink>
+    <NuxtLink to="/library" class="link library">
+      <div class="svg-default">
+        <IconsNavbarLibrary />
+      </div>
+      <div class="svg-active">
+        <IconsNavbarLibrary />
+      </div>
+      Library
     </NuxtLink>
     <NuxtLink to="/search" class="link search">
       <div class="svg-default">
