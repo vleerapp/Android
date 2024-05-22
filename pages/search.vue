@@ -4,7 +4,7 @@
   <div :class="{ 'search-container': true, 'searching': searching }">
     <IconsSearch />
     <input ref="searchInput" class="input" spellcheck="false" type="text" v-model="searchTerm" @input="handleInput()"
-      @focus="searching = true" @focusout="handleFocusOut()" @blur="searching = searchTerm.value.length != 0"
+      @focus="searching = true" @focusout="handleFocusOut()" @blur="searching = searchTerm.length != 0"
       placeholder="Search" />
   </div>
   <div :class="{ 'results': true, 'searching': searching }">
@@ -13,8 +13,8 @@
       <img :src="song.thumbnail" :alt="song.title" class="cover" loading="lazy" />
       <div class="info">
         <div>
-          <div class="title" ref="titleRefs">{{ truncateText(song.title, 'title') }}</div>
-          <div class="artist" ref="artistRefs">{{ truncateText(song.uploaderName, 'artist') }}</div>
+          <div class="title" ref="titleRefs">{{ trunance(song.title) }}</div>
+          <div class="artist" ref="artistRefs">{{ trunance(song.uploaderName) }}</div>
         </div>
         <IconsDots class="dots" />
       </div>
@@ -23,16 +23,17 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, nextTick } from 'vue';
+import { ref, onMounted } from 'vue';
 import { invoke } from '@tauri-apps/api/core';
+import type { MusicSearchResponseItem, Song } from '~/types/types';
 
 const searching = ref(false);
 const searchTerm = ref("");
-const searchResults = ref<[]>([]);
-let searchTimeout: ReturnType<typeof setTimeout>;
+const searchResults = ref<MusicSearchResponseItem[]>([]);
 const searchInput = ref<HTMLInputElement | null>(null);
 const titleRefs = ref<HTMLElement[]>([]);
 const artistRefs = ref<HTMLElement[]>([]);
+let searchTimeout: ReturnType<typeof setTimeout>;
 
 function handleInput() {
   clearTimeout(searchTimeout);
@@ -55,8 +56,8 @@ async function searchSongs() {
     const response = await fetch(`https://pipedapi.r4fo.com/search?q=${encodeURIComponent(searchTerm.value)}&filter=music_songs`);
     const data = await response.json();
     searchResults.value = data.items
-      .filter(item => item.type !== 'channel')
-      .map(item => ({
+      .filter((item: MusicSearchResponseItem) => item.type !== 'channel')
+      .map((item: MusicSearchResponseItem) => ({
         url: item.url,
         title: item.title,
         thumbnail: item.thumbnail,
@@ -65,14 +66,13 @@ async function searchSongs() {
         duration: item.duration,
         durationFormatted: `${Math.floor(item.duration / 60)}:${item.duration % 60 < 10 ? '0' : ''}${item.duration % 60}`
       }));
-    truncateAllTexts();
   } catch (error) {
     console.error("Failed to fetch songs:", error, searchTerm.value);
     searchResults.value = [];
   }
 }
 
-async function handleSongClick(song) {
+async function handleSongClick(song: MusicSearchResponseItem) {
   const match = song.url.match(/(?:\/watch\?v=)([^&]+)/)! as RegExpMatchArray;
 
   if (!match || !match[1]) {
@@ -82,7 +82,7 @@ async function handleSongClick(song) {
 
   const videoId = match[1];
 
-  var songData = {
+  var songData: Song = {
     id: videoId,
     title: song.title,
     artist: song.uploaderName,
@@ -117,32 +117,9 @@ const formatDate = (date: Date) => {
   return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
 
-const truncateText = (text: string, className: string) => {
-  const element = document.createElement('div');
-  element.style.position = 'absolute';
-  element.style.visibility = 'hidden';
-  element.style.whiteSpace = 'nowrap';
-  element.className = className;
-  element.innerText = text;
-  document.body.appendChild(element);
-
-  let truncatedText = text;
-  while (element.scrollWidth > element.clientWidth) {
-    truncatedText = truncatedText.slice(0, -1);
-    element.innerText = truncatedText + '...';
-  }
-
-  document.body.removeChild(element);
-  return truncatedText;
-}
-
-const truncateAllTexts = () => {
-  titleRefs.value.forEach((el, index) => {
-    el.innerText = truncateText(searchResults.value[index].title, 'title');
-  });
-  artistRefs.value.forEach((el, index) => {
-    el.innerText = truncateText(searchResults.value[index].uploaderName, 'artist');
-  });
+function trunance(text: string) {
+  const width = (window.innerWidth - 140) / 9;
+  return text.length > width ? text.substring(0, width - 3).trim() + "..." : text;
 }
 </script>
 
